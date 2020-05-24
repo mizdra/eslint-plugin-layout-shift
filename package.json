@@ -10,7 +10,7 @@
     "check": "run-p -l check:*",
     "check:eslint": "eslint '**/*.js'",
     "check:prettier": "prettier --check .",
-    "check:test": "mocha tests --recursive"
+    "test": "mocha tests --recursive"
   },
   "dependencies": {
     "jsx-ast-utils": "^2.2.3"
@@ -26,10 +26,10 @@
     "prettier": "~2.0.5"
   },
   "peerDependencies": {
-    "eslint": ">=6"
+    "eslint": ">=3.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=10.0"
   },
   "publishConfig": {
     "access": "public",

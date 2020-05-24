@@ -3,7 +3,7 @@ name: Node CI
 on: [push]
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,8 +15,8 @@ jobs:
         id: cache
         with:
           path: node_modules
-          key: node-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: node-
+          key: check-node-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: check-node-
 
       - name: yarn install
         if: steps.cache.outputs.cache-hit != 'true'
@@ -25,5 +25,32 @@ jobs:
       - name: yarn run check
         run: yarn run run-s -l 'check:*'
 
-      - name: yarn run build
-        run: yarn run build
+  test:
+    strategy:
+      matrix:
+        node: [10, 12, 14]
+        eslint: [3, 4, 5, 6, 7]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: test-node-${{ matrix.node }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: test-node-
+
+      - name: yarn install
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn install
+
+      - name: Change ESLint version
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn add -D eslint@${{ matrix.eslint }}
+
+      - name: yarn run test
+        run: yarn run test
