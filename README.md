@@ -1,4 +1,4 @@
-# eslint-plugin-size-attributes
+# @mizdra/eslint-plugin-size-attributes
 
 ESLint plugin to force responsive media elements to set the width/height attribute
 
@@ -10,13 +10,13 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-size-attributes`:
+Next, install `@mizdra/eslint-plugin-size-attributes`:
 
 ```
-$ npm install eslint-plugin-size-attributes --save-dev
+$ npm install @mizdra/eslint-plugin-size-attributes --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-size-attributes` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@mizdra/eslint-plugin-size-attributes` globally.
 
 ## Usage
 
