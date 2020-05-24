@@ -47,7 +47,7 @@ ruleTester.run('media-element-has-size-attributes', rule, {
     {
       code: `
         const props = { width: 200, height: 100 };
-        <img ...props />;
+        <img {...props} />;
       `,
       errors: [
         { message: 'Missing an explicit `width` prop for media element' },
