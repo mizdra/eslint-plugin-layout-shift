@@ -2,11 +2,8 @@
   "name": "eslint-plugin-size-attributes",
   "version": "0.0.0",
   "description": "ESLint plugin to force responsive media elements to set the width/height attribute",
-  "keywords": [
-    "eslint",
-    "eslintplugin",
-    "eslint-plugin"
-  ],
+  "private": false,
+  "license": "MIT",
   "author": "mizdra",
   "main": "lib/index.js",
   "scripts": {
@@ -34,5 +31,16 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "lib/**/*.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ]
 }
