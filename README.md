@@ -1,6 +1,6 @@
 # @mizdra/eslint-plugin-size-attributes
 
-ESLint plugin to force responsive media elements to set the width/height attribute
+ESLint plugin to force responsive media elements to set the width/height attributes
 
 ## Installation
 

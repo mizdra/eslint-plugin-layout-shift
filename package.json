@@ -1,7 +1,7 @@
 {
   "name": "@mizdra/eslint-plugin-size-attributes",
   "version": "0.0.0",
-  "description": "ESLint plugin to force responsive media elements to set the width/height attribute",
+  "description": "ESLint plugin to force responsive media elements to set the width/height attributes",
   "private": false,
   "license": "MIT",
   "author": "mizdra",
