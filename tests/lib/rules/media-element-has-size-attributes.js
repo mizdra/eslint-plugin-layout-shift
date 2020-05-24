@@ -2,7 +2,7 @@
 'use strict';
 
 const { RuleTester } = require('eslint');
-const rule = require('../../../lib/rules/size-attribute-in-img');
+const rule = require('../../../lib/rules/media-element-has-size-attributes');
 
 /** @type import('eslint').Linter.ParserOptions */
 const parserOptions = {
@@ -14,7 +14,7 @@ const parserOptions = {
 };
 
 const ruleTester = new RuleTester({ parserOptions });
-ruleTester.run('size-attribute-in-img', rule, {
+ruleTester.run('media-element-has-size-attributes', rule, {
   valid: [
     {
       code: '<img width="200" height="100" />;',
@@ -31,17 +31,17 @@ ruleTester.run('size-attribute-in-img', rule, {
   invalid: [
     {
       code: '<img width="200" />;',
-      errors: [{ message: 'Missing an explicit `height` prop for media elements' }],
+      errors: [{ message: 'Missing an explicit `height` prop for media element' }],
     },
     {
       code: '<img height="100" />;',
-      errors: [{ message: 'Missing an explicit `width` prop for media elements' }],
+      errors: [{ message: 'Missing an explicit `width` prop for media element' }],
     },
     {
       code: '<img />;',
       errors: [
-        { message: 'Missing an explicit `width` prop for media elements' },
-        { message: 'Missing an explicit `height` prop for media elements' },
+        { message: 'Missing an explicit `width` prop for media element' },
+        { message: 'Missing an explicit `height` prop for media element' },
       ],
     },
     {
@@ -50,8 +50,8 @@ ruleTester.run('size-attribute-in-img', rule, {
         <img ...props />;
       `,
       errors: [
-        { message: 'Missing an explicit `width` prop for media elements' },
-        { message: 'Missing an explicit `height` prop for media elements' },
+        { message: 'Missing an explicit `width` prop for media element' },
+        { message: 'Missing an explicit `height` prop for media element' },
       ],
     },
   ],
