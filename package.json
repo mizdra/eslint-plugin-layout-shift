@@ -10,7 +10,7 @@
   "author": "mizdra",
   "main": "lib/index.js",
   "scripts": {
-    "check": "npm-p check:*",
+    "check": "run-p -l check:*",
     "check:eslint": "eslint '**/*.js'",
     "check:prettier": "prettier --check .",
     "check:test": "mocha tests --recursive"
