@@ -53,3 +53,12 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 - [@mizdra/layout-shift/media-element-has-size-attributes](https://github.com/mizdra/eslint-plugin-layout-shift/blob/master/docs/rules/media-element-has-size-attributes.md): Forbid media element without an explicit size attributes
+
+## Release (for contributor)
+
+```console
+$ git switch master
+$ yarn version
+$ yarn publish
+$ git push --follow-tags
+```
