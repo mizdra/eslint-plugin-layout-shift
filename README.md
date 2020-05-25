@@ -59,6 +59,6 @@ Then configure the rules you want to use under the rules section.
 ```console
 $ git switch master
 $ yarn version
-$ yarn publish
+$ npm publish
 $ git push --follow-tags
 ```
