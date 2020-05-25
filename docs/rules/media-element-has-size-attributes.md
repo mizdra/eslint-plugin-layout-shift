@@ -12,7 +12,11 @@ This rule forbids media element without an explicit size attributes to prevent L
 
 ## Rule Details
 
-The following patterns are considered errors:
+This rule forbids media element without an explicit `width` and `height` attributes.
+
+## Examples
+
+:ok_woman: Examples of **correct** code for this rule:
 
 ```jsx
 const Img1 = <img width="200" height="100" />;
@@ -22,7 +26,7 @@ const height = 100;
 const Img2 = <img width={width} height={height} />;
 ```
 
-The following patterns are **not** considered errors:
+:no_good: Examples of **incorrect** code for this rule:
 
 ```jsx
 const Img1 = <img width="200" />;
