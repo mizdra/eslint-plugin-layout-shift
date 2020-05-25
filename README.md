@@ -2,7 +2,7 @@
 
 ESLint plugin to force responsive media elements to set the width/height attributes
 
-## What's this rule?
+## Motivation
 
 The Web has been using `<img>` tags to load images since ancient times. However, the `<img>` tag does not have any attribute to embed the aspect ratio. As a result, the size of the responsive img element cannot be determined until the browser fetches the image from the network and finishes loading, and there is a problem that [Layout Shift](https://web.dev/cls) occurs on the page.
 
@@ -12,7 +12,7 @@ To solve this problem, [the idea of computing the layout using the width and hei
 - Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1547231
 - Safari: https://trac.webkit.org/changeset/254669/webkit
 
-Therefore, this plugin forbids media element without an explicit size attributes to prevent Layout Shift from occurring.
+This plugin forbids media element without an explicit size attributes to prevent Layout Shift from occurring.
 
 ## Installation
 
@@ -53,10 +53,3 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 - [@mizdra/layout-shift/media-element-has-size-attributes](https://github.com/mizdra/eslint-plugin-layout-shift/blob/master/docs/rules/media-element-has-size-attributes.md): Forbid media element without an explicit size attributes
-
-## Supported Media Element
-
-- [x] `<img>`
-- [ ] `<video>`
-- [ ] `<source>`
-- [ ] Third-party component (ex. `<LazyImg>`)

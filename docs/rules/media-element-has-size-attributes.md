@@ -8,7 +8,7 @@ To solve this problem, [the idea of computing the layout using the width and hei
 - Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1547231
 - Safari: https://trac.webkit.org/changeset/254669/webkit
 
-Therefore, this rule forbids media element without an explicit size attributes to prevent Layout Shift from occurring.
+This rule forbids media element without an explicit size attributes to prevent Layout Shift from occurring.
 
 ## Rule Details
 
@@ -32,3 +32,10 @@ const Img3 = <img />;
 const props = { width: 200, height: 100 };
 const Img4 = <img {...props} />;
 ```
+
+## Supported Media Element
+
+- [x] `<img>`
+- [ ] `<video>`
+- [ ] `<source>`
+- [ ] Third-party component (ex. `<LazyImg>`)
