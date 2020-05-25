@@ -1,4 +1,4 @@
-# @mizdra/eslint-plugin-size-attributes
+# @mizdra/eslint-plugin-layout-shift
 
 ESLint plugin to force responsive media elements to set the width/height attributes
 
@@ -12,23 +12,23 @@ You'll first need to install [ESLint](http://eslint.org):
 
 ```
 $ npm i eslint --save-dev
+$ yarn add eslint --save-dev
 ```
 
-Next, install `@mizdra/eslint-plugin-size-attributes`:
+Next, install `@mizdra/eslint-plugin-layout-shift`:
 
 ```
-$ npm install @mizdra/eslint-plugin-size-attributes --save-dev
+$ npm install @mizdra/eslint-plugin-layout-shift --save-dev
+$ yarn add @mizdra/eslint-plugin-layout-shift --save-dev
 ```
-
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@mizdra/eslint-plugin-size-attributes` globally.
 
 ## Usage
 
-Add `@mizdra/size-attributes` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `@mizdra/layout-shift` to the plugins section of your `.eslintrc` configuration file.
 
 ```json
 {
-  "plugins": ["@mizdra/size-attributes"]
+  "plugins": ["@mizdra/layout-shift"]
 }
 ```
 
@@ -37,7 +37,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "@mizdra/size-attributes/media-element-has-size-attributes": 2
+    "@mizdra/layout-shift/media-element-has-size-attributes": 2
   }
 }
 ```
