@@ -2,7 +2,7 @@
 'use strict';
 
 const { RuleTester } = require('eslint');
-const rule = require('../../../lib/rules/media-element-has-size-attributes');
+const rule = require('../../../lib/rules/require-size-attributes');
 
 /** @type import('eslint').Linter.ParserOptions */
 const parserOptions = {
@@ -14,7 +14,7 @@ const parserOptions = {
 };
 
 const ruleTester = new RuleTester({ parserOptions });
-ruleTester.run('media-element-has-size-attributes', rule, {
+ruleTester.run('require-size-attributes', rule, {
   valid: [
     {
       code: '<img width="200" height="100" />;',

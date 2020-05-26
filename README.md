@@ -45,14 +45,14 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "@mizdra/layout-shift/media-element-has-size-attributes": 2
+    "@mizdra/layout-shift/require-size-attributes": 2
   }
 }
 ```
 
 ## Supported Rules
 
-- [@mizdra/layout-shift/media-element-has-size-attributes](https://github.com/mizdra/eslint-plugin-layout-shift/blob/master/docs/rules/media-element-has-size-attributes.md): Forbid media element without an explicit size attributes
+- [@mizdra/layout-shift/require-size-attributes](https://github.com/mizdra/eslint-plugin-layout-shift/blob/master/docs/rules/require-size-attributes.md): Forbid media element without an explicit size attributes
 
 ## Release (for contributor)
 

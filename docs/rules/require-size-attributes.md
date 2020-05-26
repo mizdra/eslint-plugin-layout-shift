@@ -1,4 +1,4 @@
-# Forbid media element without an explicit size attributes (@mizdra/layout-shift/media-element-has-size-attributes)
+# Forbid media element without an explicit size attributes (@mizdra/layout-shift/require-size-attributes)
 
 The Web has been using `<img>` tags to load images since ancient times. However, the `<img>` tag does not have any attribute to embed the aspect ratio. As a result, the size of the responsive img element cannot be determined until the browser fetches the image from the network and finishes loading, and there is a problem that [Layout Shift](https://web.dev/cls) occurs on the page.
 
