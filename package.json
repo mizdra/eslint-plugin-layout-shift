@@ -1,6 +1,6 @@
 {
   "name": "@mizdra/eslint-plugin-layout-shift",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "ESLint plugin to force responsive media elements to set the width/height attributes",
   "repository": "https://github.com/mizdra/eslint-plugin-layout-shift",
   "homepage": "https://github.com/mizdra/eslint-plugin-layout-shift",
