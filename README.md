@@ -57,6 +57,7 @@ Then configure the rules you want to use under the rules section.
 ## Release (for contributor)
 
 ```console
+$ # Wait for passing CI...
 $ git switch master
 $ git pull
 $ yarn version
