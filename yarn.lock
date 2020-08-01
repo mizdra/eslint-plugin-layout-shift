@@ -23,10 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@mizdra/eslint-config-mizdra@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@mizdra/eslint-config-mizdra/-/eslint-config-mizdra-0.4.0.tgz#c4922f7ed3ed28d1bb5b48cb7d80c8a24092e1ac"
-  integrity sha512-TMZzYTBIUwkWlY1GRaI7FfXZYY9U/wmXu7JfCMXJMY+czAVYc4yFWIO7ZlU7uzI1b+4W3mdr4fpoHMfdd1uCGw==
+"@mizdra/eslint-config-mizdra@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@mizdra/eslint-config-mizdra/-/eslint-config-mizdra-0.5.0.tgz#538b536e07991768f4772dd89c3d732050b4719a"
+  integrity sha512-FSK3iU+QarR5YlDd0VfFFgt2AIjju0xcPe19P6Xy++FFMShPXeTNNxGkKQ7Y1pcbVl5rWy1P1ZqnWKWlbPEBig==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
