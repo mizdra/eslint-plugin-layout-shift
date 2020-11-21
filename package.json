@@ -16,7 +16,7 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "jsx-ast-utils": "^2.4.1"
+    "jsx-ast-utils": "^3.1.0"
   },
   "devDependencies": {
     "@mizdra/eslint-config-mizdra": "0.5.0",
