@@ -19,7 +19,7 @@
     "jsx-ast-utils": "^3.2.0"
   },
   "devDependencies": {
-    "@mizdra/eslint-config-mizdra": "0.7.0",
+    "@mizdra/eslint-config-mizdra": "0.8.0",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
