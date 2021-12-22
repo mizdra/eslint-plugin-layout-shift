@@ -8,7 +8,8 @@
   "private": false,
   "license": "MIT",
   "author": "mizdra",
-  "main": "lib/index.js",
+  "type": "module",
+  "exports": "./lib/index.js",
   "scripts": {
     "check": "run-p -l check:*",
     "check:eslint": "eslint '**/*.js'",

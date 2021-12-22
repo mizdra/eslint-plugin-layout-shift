@@ -1,7 +1,7 @@
 // @ts-check
 
-const { RuleTester } = require('eslint');
-const rule = require('../../../lib/rules/require-size-attributes');
+import { RuleTester } from 'eslint';
+import rule from '../../../lib/rules/require-size-attributes.js';
 
 /** @type import('eslint').Linter.ParserOptions */
 const parserOptions = {
