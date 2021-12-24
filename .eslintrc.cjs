@@ -4,5 +4,7 @@ module.exports = {
   env: {
     node: true,
   },
-  rules: {},
+  rules: {
+    'import/no-default-export': 'off',
+  },
 };
